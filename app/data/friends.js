@@ -1,0 +1,1 @@
+// Array of objects holding the database of users who have completed the survey
