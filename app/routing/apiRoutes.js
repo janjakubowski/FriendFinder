@@ -1,7 +1,7 @@
 // ===============================================================================
 // This data source holds an array of objects {friend's name, avatar and scores}
 
-var friendsData = require("../data/friends");
+var friends = require("../data/friends");
 
 
 // ===============================================================================
@@ -13,13 +13,15 @@ module.exports = function(app) {
 	// API GET Requests
 
 	app.get("/api/friends", function(req, res) {
-		res.json(friendsData);
+		res.json(friends);
 	});
 
 
 	// API POST Requests
 
 	app.post("/api/friends", function(req, res) {
+
+		// console.log("post req: 1" + JSON.stringify(req.body));
 			
 			var user = req.body;
 			// var name = user.name;
@@ -31,7 +33,7 @@ module.exports = function(app) {
 			});
 			
 
-			newFriend = {
+			newUser = {
 				name: user.name,
 				avatar: user.avatar,
 				scores: scores
@@ -43,6 +45,8 @@ module.exports = function(app) {
 					}, 0);
 			}
 
+			console.log("total for new user: " + totalScore);
+
 			// default best match to first one in friendsDB
 			var bestMatchIndex = 0;
 			var bestMatchDifference = 40;       // diff of 10 - 5's and 10 - 1's is 40
@@ -50,6 +54,7 @@ module.exports = function(app) {
 			for(var i = 0; i < friends.length; i++) {
 
 				nextScores = friends[i].scores;
+
 				
 				var nextTotalScore = function(nextScores){
 					return nextScores.reduce(function(a,b) {
@@ -57,6 +62,7 @@ module.exports = function(app) {
 					}, 0);
 				}
 				
+				console.log("Next friend: "+(friends[i])+ " has a score of: " + nextTotalScore);
 				var totalDifference = Math.abs(totalScore - nextTotalScore);
 
 				// if there is a new best match, point new best match's index and set the new best diff
@@ -67,7 +73,7 @@ module.exports = function(app) {
 			};
 
 			
-			friends.push(user);
+			friends.push(newUser);
 
 			res.json(friends[bestMatchIndex]);
 	});

@@ -25,8 +25,9 @@ var friends = [{
     avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=LongHairFro&accessoriesType=Prescription01&hairColor=Red&facialHairType=Blank&clotheType=ShirtVNeck&clotheColor=Blue03&eyeType=Close&eyebrowType=UpDown&mouthType=Default&skinColor=DarkBrown',
     scores: [5, 2, 3, 5, 2, 3, 5, 2, 3, 4]
 }
-
 ];
+
+module.exports = friends;
 
 // M 'https://avataaars.io/?avatarStyle=Circle&topType=LongHairDreads&accessoriesType=Round&hairColor=BlondeGolden&facialHairType=BeardLight&facialHairColor=Blonde&clotheType=GraphicShirt&clotheColor=Blue01&graphicType=Resist&eyeType=EyeRoll&eyebrowType=FlatNatural&mouthType=ScreamOpen&skinColor=Tanned'
 
