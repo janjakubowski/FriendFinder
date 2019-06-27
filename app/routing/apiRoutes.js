@@ -67,4 +67,5 @@ module.exports = function(app) {
 		friends.push(newUser);
 
 		res.json(friends[bestMatchIndex]);
-	});
+	})
+}
