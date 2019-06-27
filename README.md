@@ -9,8 +9,6 @@ This week's assignment adds a real RDBMS, mySQL, which will store the data about
 
 Note: The functionality described reflect the assignment with my modifications to what is built.
 
-link to instructions
-
 ### Basic Functionality
 
 #### Survey User
@@ -18,3 +16,10 @@ link to instructions
 #### Find Match
 
 #### Deployment Model 
+
+## Technology
+
+Using two new technologies in this week's homework, both are directly related to deploying our node.js application
+
+1. express - 
+2. heroku -

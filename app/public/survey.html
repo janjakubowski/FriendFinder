@@ -17,150 +17,176 @@
 	
 	<div class="container">
 
-		<div class="jumbotron">
-			<h1 class="text-center"><span class="fa fa-odnoklassniki"></span>Friend Finder</h1>
+		<div class="jumbotron bg-primary text-white">
+			<h1 class="text-center"><span class="fa fa-odnoklassniki"></span> Friend Finder</h1>
 			<hr>
-			<h2 class="text-center">We only have 5 tables! Book your seat before they all are gone!</h2>
-			<h2 class="text-center">We only have 5 tables! Book your seat before they all are gone!</h2>
+			<h2 class="text-center">Please complete the survey and provide a link to a avatar or photo.</h2>
 			<br>
 		
 			<div class="text-center">
-				<a href="/survey"><button class="btn btn-lg btn-primary"><span class="fa fa-table"></span> View Tables</button></a>
+				<a target="_blank" href="https://getavataaars.com/"><button class="btn btn-lg btn-light"><span class="fa fa-external-link"></span> Create an avatar</button></a>
+				<br/><p>Use the <strong>getavataaars</strong> site to create a fun avatar.
+				Copy and paste the link provided here, <i>just the link, please.</i></p>
 			</div>
 	
 		</div>
+
 		<h2>Survey Questions</h2>
 		<p>ALL QUESTIONS ARE REQUIRED</p>
 
-		<form>
+		<form id="ffsurvey">
 
-		<h3>Tell us about yourself</h3>
-		<!-- <div class="form-group"> -->
+			<h3>Tell us about yourself</h3>
 			<h5>Name</h5>
-			<!-- <label for="name"><strong> Name</strong></label> -->
 			<input type="text" id="name" class="form-control" required>
-		<!-- </div> -->
-		<input type="url" id="avatar" class="form-control" required>
+			<h5>Link to Avatar or Photo</h5>
+			<input type="url" id="avatar" class="form-control" required>
 
-		<br/><br/><h5>Question 1: </h5>
-		<select name="Question 1" id="q1" class="value-chosen">
-			<option value="0">Choose:</option>
-			<option value="1">1 - Strongly Disagree</option>
-			<option value="2">2 - Somewhat Disagree</option>
-			<option value="3">3 - Neither Agree or Disagree</option>
-			<option value="4">4 - Somewhat Agree</option>
-			<option value="5">5 - Strongly Agree</option>
-		</select>
-		<!-- <br/><br/><h5>Question 2: </h5>
-		<select name="" id="q2" class="value-chosen">
+			<br/><br/><h5>Question 1: </h5>
+			<select name="Question 1" id="q1" class="value-chosen">
 				<option value="0">Choose:</option>
 				<option value="1">1 - Strongly Disagree</option>
 				<option value="2">2 - Somewhat Disagree</option>
 				<option value="3">3 - Neither Agree or Disagree</option>
 				<option value="4">4 - Somewhat Agree</option>
 				<option value="5">5 - Strongly Agree</option>
-		</select>
-		<br/><br/><h5>Question 3: </h5>
-		<select name="" id="q3" class="value-chosen">
-				<option value="0">Choose:</option>
-				<option value="1">1 - Strongly Disagree</option>
-				<option value="2">2 - Somewhat Disagree</option>
-				<option value="3">3 - Neither Agree or Disagree</option>
-				<option value="4">4 - Somewhat Agree</option>
-				<option value="5">5 - Strongly Agree</option>
-		</select>
-		<br/><br/><h5>Question 4: </h5>
-		<select name="" id="q4" class="value-chosen">
-				<option value="0">Choose:</option>
-				<option value="1">1 - Strongly Disagree</option>
-				<option value="2">2 - Somewhat Disagree</option>
-				<option value="3">3 - Neither Agree or Disagree</option>
-				<option value="4">4 - Somewhat Agree</option>
-				<option value="5">5 - Strongly Agree</option>
-		</select>
-		<br/><br/><h5>Question 5: </h5>
-		<select name="" id="q5" class="value-chosen">
-				<option value="0">Choose:</option>
-				<option value="1">1 - Strongly Disagree</option>
-				<option value="2">2 - Somewhat Disagree</option>
-				<option value="3">3 - Neither Agree or Disagree</option>
-				<option value="4">4 - Somewhat Agree</option>
-				<option value="5">5 - Strongly Agree</option>
-		</select>
-		<br/><br/><h5>Question 6: </h5>
-		<select name="" id="q6" class="value-chosen">
-				<option value="0">Choose:</option>
-				<option value="1">1 - Strongly Disagree</option>
-				<option value="2">2 - Somewhat Disagree</option>
-				<option value="3">3 - Neither Agree or Disagree</option>
-				<option value="4">4 - Somewhat Agree</option>
-				<option value="5">5 - Strongly Agree</option>
-		</select>
-		<br/><br/><h5>Question 7: </h5>
-		<select name="" id="q7" class="value-chosen">
-				<option value="0">Choose:</option>
-				<option value="1">1 - Strongly Disagree</option>
-				<option value="2">2 - Somewhat Disagree</option>
-				<option value="3">3 - Neither Agree or Disagree</option>
-				<option value="4">4 - Somewhat Agree</option>
-				<option value="5">5 - Strongly Agree</option>
-		</select>
-		<br/><br/><h5>Question 8: </h5>
-		<select name="" id="q8" class="value-chosen">
-				<option value="0">Choose:</option>
-				<option value="1">1 - Strongly Disagree</option>
-				<option value="2">2 - Somewhat Disagree</option>
-				<option value="3">3 - Neither Agree or Disagree</option>
-				<option value="4">4 - Somewhat Agree</option>
-				<option value="5">5 - Strongly Agree</option>
-		</select>
-		<br/><br/><h5>Question 9: </h5>
-		<select name="" id="q9" class="value-chosen">
-				<option value="0">Choose:</option>
-				<option value="1">1 - Strongly Disagree</option>
-				<option value="2">2 - Somewhat Disagree</option>
-				<option value="3">3 - Neither Agree or Disagree</option>
-				<option value="4">4 - Somewhat Agree</option>
-				<option value="5">5 - Strongly Agree</option>
-		</select> -->
-		<br/><br/><h5>Question 10: </h5>
-		<select name="" id="q10" class="value-chosen">
-				<option value="0">Choose:</option>
-				<option value="1">1 - Strongly Disagree</option>
-				<option value="2">2 - Somewhat Disagree</option>
-				<option value="3">3 - Neither Agree or Disagree</option>
-				<option value="4">4 - Somewhat Agree</option>
-				<option value="5">5 - Strongly Agree</option>
-		</select>
+			</select>
+			<br/><br/><h5>Question 2: </h5>
+			<select name="" id="q2" class="value-chosen">
+					<option value="0">Choose:</option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Somewhat Disagree</option>
+					<option value="3">3 - Neither Agree or Disagree</option>
+					<option value="4">4 - Somewhat Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+			</select>
+			<br/><br/><h5>Question 3: </h5>
+			<select name="" id="q3" class="value-chosen">
+					<option value="0">Choose:</option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Somewhat Disagree</option>
+					<option value="3">3 - Neither Agree or Disagree</option>
+					<option value="4">4 - Somewhat Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+			</select>
+			<br/><br/><h5>Question 4: </h5>
+			<select name="" id="q4" class="value-chosen">
+					<option value="0">Choose:</option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Somewhat Disagree</option>
+					<option value="3">3 - Neither Agree or Disagree</option>
+					<option value="4">4 - Somewhat Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+			</select>
+			<br/><br/><h5>Question 5: </h5>
+			<select name="" id="q5" class="value-chosen">
+					<option value="0">Choose:</option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Somewhat Disagree</option>
+					<option value="3">3 - Neither Agree or Disagree</option>
+					<option value="4">4 - Somewhat Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+			</select>
+			<br/><br/><h5>Question 6: </h5>
+			<select name="" id="q6" class="value-chosen">
+					<option value="0">Choose:</option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Somewhat Disagree</option>
+					<option value="3">3 - Neither Agree or Disagree</option>
+					<option value="4">4 - Somewhat Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+			</select>
+			<br/><br/><h5>Question 7: </h5>
+			<select name="" id="q7" class="value-chosen">
+					<option value="0">Choose:</option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Somewhat Disagree</option>
+					<option value="3">3 - Neither Agree or Disagree</option>
+					<option value="4">4 - Somewhat Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+			</select>
+			<br/><br/><h5>Question 8: </h5>
+			<select name="" id="q8" class="value-chosen">
+					<option value="0">Choose:</option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Somewhat Disagree</option>
+					<option value="3">3 - Neither Agree or Disagree</option>
+					<option value="4">4 - Somewhat Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+			</select>
+			<br/><br/><h5>Question 9: </h5>
+			<select name="" id="q9" class="value-chosen">
+					<option value="0">Choose:</option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Somewhat Disagree</option>
+					<option value="3">3 - Neither Agree or Disagree</option>
+					<option value="4">4 - Somewhat Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+			</select>
+			<br/><br/><h5>Question 10: </h5>
+			<select name="" id="q10" class="value-chosen">
+					<option value="0">Choose:</option>
+					<option value="1">1 - Strongly Disagree</option>
+					<option value="2">2 - Somewhat Disagree</option>
+					<option value="3">3 - Neither Agree or Disagree</option>
+					<option value="4">4 - Somewhat Agree</option>
+					<option value="5">5 - Strongly Agree</option>
+			</select>
 
+		</form>
 	
 		<!-- <footer class="footer"> -->
-			<div class="container">
-					<div class="text-center">
-							<button type="submit" class="btn btn-lg btn-primary" id="submit"><span class="fa fa-cogs"></span> Find My Match</button></a>
-						</div>
-			</div>
+		<div class="container">
+				<div class="text-center">
+						<button type="submit" class="btn btn-lg btn-primary" id="submit"><span class="fa fa-cogs"></span> Find My Match</button></a>
+					</div>
+		</div>
 		<!-- </footer> -->
-		</form>
 
-		<!-- Modal after survey completion -->
-		<div id="bestMatchModal" class="modal fade" role="dialog">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h3 class="modal-title">Your New Best Friend</h1>
-					</div>
-					<div class="modal-body">
-						<h2 id="bestMatch"></h2>
-						<img id="bestMatchAvatar" src="#">
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
+		<!-- begin modalIncomplete  -->
+		<div id="modalIncomplete" class="modal" tabindex="-1" role="dialog"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm modal-notify" role="document">
+				<div class="modal-header d-flex justify-content-center">
+					<p class="heading">Your Survey is Incomplete</p>
+				</div>
+				<div class="modal-body">
+					<p>Please complete ALL the questions and try again!</p>
+					<!-- <i class="fas fa-thumbs-down animated rotateIn"></i> -->
+				</div>
+				<div class="modal-footer d-flex justify-content-center">
+					<a type="button" class="btn  btn-danger waves-effect" data-dismiss="modal">OK</a>
 				</div>
 			</div>
 		</div>
+		<!-- end modalIncomplete -->
+
+		<!--Modal: modalBestMatch-->
+		<div class="modal fade" id="modalBestMatch" tabindex="-1" role="dialog"
+			 aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-notify modal-success" role="document">
+		  <!--Content-->
+		  <div class="modal-content text-center">
+  
+			<!--Header-->
+			<div class="modal-header d-flex justify-content-center btn-success">
+			  <h3 class="modal-title">Your Best Match is ...></h3>
+			</div>
+  
+			<!--Body-->
+			<div class="modal-body">
+			  <p class="heading" id="bestMatchName"></p>
+			  <img id="bestMatchAvatar" src="#">
+			</div>
+  
+			<!--Footer-->
+			<div class="modal-footer flex-center">
+			  <a type="button" class="btn btn-success waves-effect" data-dismiss="modal">OK</a>
+			</div>
+  
+		  </div>
+		</div>
+	  </div>
+	  <!--Modal: modalConfirmSuccessAdded-->
 	
 	</div>
 
@@ -177,22 +203,22 @@
 
 			var scores = [
 					$("#q1").val(),
-					// $("#q2").val(),
-					// $("#q3").val(),
-					// $("#q4").val(),
-					// $("#q5").val(),
-					// $("#q6").val(),
-					// $("#q7").val(),
-					// $("#q8").val(),
-					// $("#q9").val(),
+					$("#q2").val(),
+					$("#q3").val(),
+					$("#q4").val(),
+					$("#q5").val(),
+					$("#q6").val(),
+					$("#q7").val(),
+					$("#q8").val(),
+					$("#q9").val(),
 					$("#q10").val()
 				];
-				console.log (scores);
 
 			if (scores.includes("0")) { isValid = false };
 
 			if (!isValid) {
-				alert("Survey is incomplete!");
+				// $("#modalIncomplete").modal("show");
+				alert("Your survey is INCOMPLETE. Please answer all the questions and try again.")
 				return;
 			}
 
@@ -200,12 +226,11 @@
 				name, avatar, scores
 			};
 
-			var currentURL = window.location.origin;
-
-			$.post( "/api/friends", newUser, function(data) {
-				$("#bestFriend").text(data.name);
-				$("#bestFriendPhoto").attr("src", data.avatar);
-				$("#bestFriendModal").modal("toggle");
+			$.post("/api/friends", newUser, function(data) {
+				$("#bestMatchName").text(data.name);
+				$("#bestMatchAvatar").attr("src", data.avatar);
+				$("#modalBestMatch").modal("show");
+				$("#ffsurvey")[0].reset();
 			});
 		});
 
